@@ -1,0 +1,25 @@
+.container textarea{
+    resize:none;
+} 
+
+/* .id{
+    width: 15% !important;
+    background-color: aqua;
+   
+}
+.price{
+    width:20% !important;
+    background-color: aquamarine;
+}
+.Category{
+    width: 25% !important;
+    background-color: bisque;
+}
+.Description{
+    width: 25% !important;
+    background-color: blue;
+}
+.Action{
+    width: 15% !important;
+    background-color: blueviolet;
+} */

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud system</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-danger">
+    <div class="container bg-info ">
+        <h1 class="text-center">Crud System</h1>
+        <label for="addNewProduct">ProductName :</label>
+        <br>
+        <input type="text" id="addNewProduct" class="w-100  rounded-5" name="addNewProduct">
+        <label for="ProductPrice">ProductPrice : </label>
+        <br>
+        <input type="number"  id="ProductPrice" class="w-100 rounded-5" name="ProductPrice">
+        <br>
+        <label for="produtCategory">productCategory : </label>
+        <input type="text" id="produtCategory" name="productCategory" class="w-100 rounded-5">
+        <br>
+        <label for="productDescription">productDescription : </label>
+        <textarea name="productDescription" id="productDescription" cols="30" rows="10" class="w-100 rounded-3"></textarea>
+        <!-- <input type="submit" id="addProduct" class="w-100 bg-success rounded-3" value="add product"> -->
+        <button id="addProduct" class="btn btn-success w-100" onclick="addProduct()">Add Product</button>
+        <br>
+        <input oninput="productSearch()"  type="search" placeholder="search By Name ...." name="search" class=" w-75 mx-auto form-control mt-5" id="search" >
+       <table class="mx-auto table mt-5 mb-5 text-center">
+        <thead class="">
+            <tr calss="">
+                <th class=" id ">
+                    ID
+                </th>
+                <th class=" name ">
+                    Name
+                </th>
+                <th class="price ">
+                    Price 
+                </th >
+                <th class="Category ">
+                    Category
+                </th>
+                <th class="Description ">
+                    Description 
+                </th>
+                <th class="Action ">
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- <tr>
+                <td >
+                    0
+                </td>
+                <td>
+                    100000
+                </td>
+                <td>
+                    mobile
+                </td>
+                <td>
+                    good
+                </td>
+                <td >
+                    <button class="btn bg-warning " >update</button>
+                    <button class="btn bg-danger" >delete</button>
+                </td>
+                </tr> -->
+        </tbody>
+        
+    </table>
+    </div>
+   
+
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
